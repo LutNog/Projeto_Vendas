@@ -1,0 +1,77 @@
+Modelo Lógico E-Commerce
+
+Entidades e seus Atributos
+
+CLIENTE
+- ID_Cliente (INT PK)
+- Nome (TEXTO)
+- CPF (TEXTO)
+- Data Nascimento (DATE)
+- UF (TEXTO)
+
+
+PRODUTO
+- ID_Produto (INT PK)
+- Nome (TEXTO)
+- Preço (FLOAT)
+- ID_Categoria (INT FK)
+- ID_Promoção (INT PK)
+
+
+CATEGORIA
+- ID_Categoria (INT PK)
+- Nome (TEXTO)
+
+
+VENDEDOR
+- ID_VENDEDOR (ID PK)
+- Nome
+- Código_Vendedor (INT UNIQUE)
+- ID_Canal_Venda (INT FK)
+
+
+CANAL DE VENDA
+- ID_Canal_Venda (INT PK)
+- Local (TEXTO)
+
+
+ENGAJAMENTO
+- ID_Engajamento (INT PK)
+- Total de Visualizações (INT)
+- Comentários (INT)
+- Curtidas (INT)
+- Compartilhamentos (INT)
+- ID_Canal (INT FK)
+- ID_Produto (INT FK)
+
+
+TRANSAÇAO DA VENDA
+- ID_Transação (INT PK)
+- Data e Hora (DATE)
+- Feedback (INT)
+- ID_CLIENTE (INT FK)
+- ID_Pagamento (INT FK)
+- ID_Canal (INT FK)
+- ID_Vendedor (IN FK)
+
+
+PRODUTO TRANSAÇAO
+- ID_Produto (INT FK)
+- ID_Trasação (INT FK)
+- Quantidade (INT)
+
+
+METODO DE PAGAMENTO
+- ID_Pagamento (INT PK)
+- Tipo (TEXTO)
+
+
+PROMOÇAO
+- ID_Promoção (INT PK)
+- Desconto (INT)
+
+
+ESTOQUE
+- ID_Estoque (INT PK)
+- ID_Produto (INT FK)
+- Quantidade Disponível (INT)
