@@ -1,0 +1,37 @@
+DW Modelo Conceitual
+
+
+Entidade e Atributos
+
+
+CLIENTE
+ID Cliente (PK)
+Nome
+UF
+
+
+VENDEDOR
+ID Vendedor (PK)
+Nome
+
+
+LOJA
+ID Loja (PK)
+Local
+
+
+PRODUTO
+ID Produto (PK)
+Categoria
+Nome Produto
+
+
+TRANSAÇÃO
+ID Transação (PK)
+ID Cliente (FK)
+ID Vendedor (FK)
+ID LOJA (FK)
+ID Produto (FK)
+Data_transação DATE
+Quantidade 
+Valor Total

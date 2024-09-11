@@ -1,0 +1,35 @@
+3 - DW Modelo Lógico Vendas
+
+Tabelas e Colunas
+
+DIM_CLIENTE
+ID Cliente INT (PK)
+Nome VARCHAR (255)
+UF CHAR (2)
+
+
+DIM_VENDEDOR
+ID Vendedor INT (PK)
+Nome VARCAHR (255)
+
+
+DIM_LOJA
+ID Loja (PK)
+Local VARCHAR (255)
+
+
+DIM_PRODUTO
+ID Produto INT (PK)
+Categoria VARCHAR (255)
+Nome Produto VARCHAR (255)
+
+
+FATO_TRANSACAO
+ID Transacao INT (PK)
+ID Cliente INT (FK)
+ID Vendedor INT (FK)
+ID LOJA INT (FK)
+ID Produto INT (FK)
+Data_Transacao DATE
+Quantidade INT
+Valor Total FLOAT
