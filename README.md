@@ -1,2 +1,3 @@
 # Projeto_Vendas
-Project: DB, DW, ETL, Data Analysis and Data Visualization
+Project: DB, DW, ETL, Data Analytics and Data Visualization
+
