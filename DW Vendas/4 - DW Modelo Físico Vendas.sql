@@ -32,7 +32,7 @@ CREATE TABLE dw_vendas.DIM_PRODUTO(
 
 -- Criando tabela fato
 
-CREATE TABLE dw_vendas.FATO_TRASANCAO(
+CREATE TABLE dw_vendas.FATO_TRANSACAO(
 	ID_transacao INT PRIMARY KEY NOT NULL,
 	Data_transacao DATE NOT NULL,
 	Quantidade INT NOT NULL,
